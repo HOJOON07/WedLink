@@ -37,6 +37,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.2.19"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
           ["classnames", "npm:2.5.1"],\
+          ["date-fns", "npm:3.3.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:347a3df1ee49ed7463a231a38332360a1a78413bd718567c05e0765f90c5c44431608df3bb89fc86445c40c6b0677ad7ee58bf4e5727116fb96d6af2d3bb7a14#npm:9.1.0"],\
           ["eslint-config-react-app", "virtual:347a3df1ee49ed7463a231a38332360a1a78413bd718567c05e0765f90c5c44431608df3bb89fc86445c40c6b0677ad7ee58bf4e5727116fb96d6af2d3bb7a14#npm:7.0.1"],\
@@ -49,6 +50,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:347a3df1ee49ed7463a231a38332360a1a78413bd718567c05e0765f90c5c44431608df3bb89fc86445c40c6b0677ad7ee58bf4e5727116fb96d6af2d3bb7a14#npm:18.2.0"],\
           ["react-scripts", "virtual:347a3df1ee49ed7463a231a38332360a1a78413bd718567c05e0765f90c5c44431608df3bb89fc86445c40c6b0677ad7ee58bf4e5727116fb96d6af2d3bb7a14#npm:5.0.1"],\
           ["sass", "npm:1.71.1"],\
+          ["swiper", "npm:9.4.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
@@ -8080,6 +8082,15 @@ const RAW_RUNTIME_STATE =
           ["abab", "npm:2.0.6"],\
           ["whatwg-mimetype", "npm:2.3.0"],\
           ["whatwg-url", "npm:8.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["date-fns", [\
+      ["npm:3.3.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/date-fns-npm-3.3.1-794b72f5e7-10c0.zip/node_modules/date-fns/",\
+        "packageDependencies": [\
+          ["date-fns", "npm:3.3.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -16938,6 +16949,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["ssr-window", [\
+      ["npm:4.0.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/ssr-window-npm-4.0.2-01f9c0151e-10c0.zip/node_modules/ssr-window/",\
+        "packageDependencies": [\
+          ["ssr-window", "npm:4.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ssri", [\
       ["npm:10.0.5", {\
         "packageLocation": "../../../.yarn/berry/cache/ssri-npm-10.0.5-1a7557d04d-10c0.zip/node_modules/ssri/",\
@@ -17376,6 +17396,16 @@ const RAW_RUNTIME_STATE =
           ["csso", "npm:4.2.0"],\
           ["picocolors", "npm:1.0.0"],\
           ["stable", "npm:0.1.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["swiper", [\
+      ["npm:9.4.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/swiper-npm-9.4.1-38d46d35a3-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:9.4.1"],\
+          ["ssr-window", "npm:4.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18533,6 +18563,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", "npm:18.2.19"],\
           ["@types/testing-library__jest-dom", "npm:6.0.0"],\
           ["classnames", "npm:2.5.1"],\
+          ["date-fns", "npm:3.3.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:347a3df1ee49ed7463a231a38332360a1a78413bd718567c05e0765f90c5c44431608df3bb89fc86445c40c6b0677ad7ee58bf4e5727116fb96d6af2d3bb7a14#npm:9.1.0"],\
           ["eslint-config-react-app", "virtual:347a3df1ee49ed7463a231a38332360a1a78413bd718567c05e0765f90c5c44431608df3bb89fc86445c40c6b0677ad7ee58bf4e5727116fb96d6af2d3bb7a14#npm:7.0.1"],\
@@ -18545,6 +18576,7 @@ const RAW_RUNTIME_STATE =
           ["react-dom", "virtual:347a3df1ee49ed7463a231a38332360a1a78413bd718567c05e0765f90c5c44431608df3bb89fc86445c40c6b0677ad7ee58bf4e5727116fb96d6af2d3bb7a14#npm:18.2.0"],\
           ["react-scripts", "virtual:347a3df1ee49ed7463a231a38332360a1a78413bd718567c05e0765f90c5c44431608df3bb89fc86445c40c6b0677ad7ee58bf4e5727116fb96d6af2d3bb7a14#npm:5.0.1"],\
           ["sass", "npm:1.71.1"],\
+          ["swiper", "npm:9.4.1"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\

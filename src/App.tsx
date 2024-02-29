@@ -4,13 +4,16 @@ import { useEffect, useState } from 'react';
 import styles from './App.module.scss';
 
 import Heading from './components/sections/Heading';
+import ImageGallery from './components/sections/ImageGallery';
+
 import Video from './components/sections/Video';
 import FullScreenMessage from './components/shared/FullScreenMessage';
+import { Wedding } from './models/wedding';
 
 const cx = classNames.bind(styles);
 
 function App() {
-  const [wedding, setWedding] = useState(null);
+  const [wedding, setWedding] = useState<Wedding | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
@@ -42,10 +45,19 @@ function App() {
   if (error) {
     return <FullScreenMessage type="error" />;
   }
+  if (wedding == null) {
+    return null;
+  }
+
+  const { date, galleryImages } = wedding;
+
+  console.log(galleryImages);
   return (
     <div className={cx('container')}>
-      <Heading />
+      <Heading date={date} />
       <Video />
+
+      <ImageGallery images={galleryImages} />
       {JSON.stringify(wedding)}
     </div>
   );
