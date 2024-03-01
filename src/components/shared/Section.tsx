@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 interface SectionPros {
   children: React.ReactNode;
   className?: string;
-  title?: string;
+  title?: React.ReactNode;
 }
 
 export default function Section({ children, className, title }: SectionPros) {

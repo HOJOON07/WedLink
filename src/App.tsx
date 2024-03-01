@@ -2,11 +2,13 @@ import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
 
 import styles from './App.module.scss';
+import Calendar from './components/sections/Calendar';
 
 import Heading from './components/sections/Heading';
 import ImageGallery from './components/sections/ImageGallery';
 import Intro from './components/sections/Intro';
 import Invitation from './components/sections/Invitation';
+import Map from './components/sections/Map';
 
 import Video from './components/sections/Video';
 import FullScreenMessage from './components/shared/FullScreenMessage';
@@ -60,7 +62,6 @@ function App() {
     message: { intro, invitation },
   } = wedding;
 
-  console.log(galleryImages);
   return (
     <div className={cx('container')}>
       <Heading date={date} />
@@ -74,6 +75,8 @@ function App() {
       />
       <Invitation message={invitation} />
       <ImageGallery images={galleryImages} />
+      <Calendar date={date} />
+      <Map location={location} />
       {JSON.stringify(wedding)}
     </div>
   );
