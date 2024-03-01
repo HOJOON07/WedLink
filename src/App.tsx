@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 import styles from './App.module.scss';
 import Calendar from './components/sections/Calendar';
+import Contact from './components/sections/Contact';
 
 import Heading from './components/sections/Heading';
 import ImageGallery from './components/sections/ImageGallery';
@@ -12,6 +13,7 @@ import Map from './components/sections/Map';
 
 import Video from './components/sections/Video';
 import FullScreenMessage from './components/shared/FullScreenMessage';
+import Share from './components/shared/Share';
 import { Wedding } from './models/wedding';
 
 const cx = classNames.bind(styles);
@@ -77,7 +79,9 @@ function App() {
       <ImageGallery images={galleryImages} />
       <Calendar date={date} />
       <Map location={location} />
-      {JSON.stringify(wedding)}
+      <Contact groom={groom} bride={bride} />
+      <Share groomName={groom.name} brideName={bride.name} date={date} />
+      {/* {JSON.stringify(wedding)} */}
     </div>
   );
 }

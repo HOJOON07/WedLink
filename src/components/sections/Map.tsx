@@ -1,6 +1,6 @@
 import { Location } from '@/models/wedding';
 import classNames from 'classnames/bind';
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Section from '../shared/Section';
 import styles from './Map.module.scss';
 
@@ -47,11 +47,41 @@ export default function Map({ location }: MapProps) {
   }, [location]);
 
   return (
-    <Section>
+    <Section
+      title={
+        <div className={cx('wrap-header')}>
+          <span className={cx('txt-title')}>오시는길</span>
+          <span className={cx('txt-subtitle')}>{location.name}</span>
+          <span>{location.address}</span>
+        </div>
+      }
+    >
       <div className={cx('wrap-map')}>
         <div className={cx('map')} ref={mapContainerRef}></div>
-        <a href="">길찾기</a>
+        <a className={cx('btn-find-way')} href={location.link} target="_blank">
+          길찾기
+        </a>
+      </div>
+      <div>
+        <WayToCome label="버스" list={location.waytocome.bus} />
+        <WayToCome label="지하철" list={location.waytocome.metro} />
       </div>
     </Section>
+  );
+}
+interface WayToComeProps {
+  label: React.ReactNode;
+  list: string[];
+}
+function WayToCome({ label, list }: WayToComeProps) {
+  return (
+    <div className={cx('wrap-waytocome')}>
+      <div className={cx('txt-label')}>{label}</div>
+      <ul>
+        {list.map((waytocome) => (
+          <li>{waytocome}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
