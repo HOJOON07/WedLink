@@ -25,7 +25,7 @@ const defaultValues: ModalProps = {
   onLeftButtonClick: () => {},
 };
 
-function ModalContext({ children }: { children: React.ReactNode }) {
+export function ModalContext({ children }: { children: React.ReactNode }) {
   const [modalState, setModalState] = useState<ModalProps>(defaultValues);
   const $portal_root = document.getElementById('root-portal');
 

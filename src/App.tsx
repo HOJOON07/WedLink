@@ -3,6 +3,7 @@ import { tr } from 'date-fns/locale';
 import { useEffect, useState } from 'react';
 
 import styles from './App.module.scss';
+import AttendCountModal from './components/AttendCountModal';
 import Calendar from './components/sections/Calendar';
 import Contact from './components/sections/Contact';
 
@@ -84,7 +85,7 @@ function App() {
       <Contact groom={groom} bride={bride} />
       <Share groomName={groom.name} brideName={bride.name} date={date} />
       {/* {JSON.stringify(wedding)} */}
-      <Modal
+      {/* <Modal
         open={true}
         title="현재 참석자"
         body={
@@ -98,7 +99,8 @@ function App() {
         onRightButtonClick={() => {
           console.log('오른쪽 클릭');
         }}
-      />
+      /> */}
+      <AttendCountModal wedding={wedding} />
     </div>
   );
 }

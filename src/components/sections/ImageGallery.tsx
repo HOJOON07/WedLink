@@ -1,3 +1,4 @@
+import generateImageUrl from '@/utils/generateImageUrl';
 import classNames from 'classnames/bind';
 import React, { useState } from 'react';
 import ImageViewer from '../ImageViewer';
@@ -36,7 +37,25 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
                   handleSelectedImage(idx);
                 }}
               >
-                <img src={src + '.jpg'} alt="갤러리 이미지" />
+                {/* <img src={src + '.jpg'} alt="갤러리 이미지" /> */}
+                <picture>
+                  <source
+                    srcSet={generateImageUrl({
+                      filename: src,
+                      format: 'webp',
+                      option: 'w_240,h_240,q_auto,c_fill',
+                    })}
+                    type="image/webp"
+                  />
+                  <img
+                    src={generateImageUrl({
+                      filename: src,
+                      format: 'webp',
+                      option: 'w_240,h_240,q_auto,c_fill',
+                    })}
+                    alt="이미지"
+                  />
+                </picture>
               </li>
             );
           })}
