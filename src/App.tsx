@@ -1,4 +1,5 @@
 import classNames from 'classnames/bind';
+import { tr } from 'date-fns/locale';
 import { useEffect, useState } from 'react';
 
 import styles from './App.module.scss';
@@ -13,6 +14,7 @@ import Map from './components/sections/Map';
 
 import Video from './components/sections/Video';
 import FullScreenMessage from './components/shared/FullScreenMessage';
+import Modal from './components/shared/Modal';
 import Share from './components/shared/Share';
 import { Wedding } from './models/wedding';
 
@@ -82,6 +84,21 @@ function App() {
       <Contact groom={groom} bride={bride} />
       <Share groomName={groom.name} brideName={bride.name} date={date} />
       {/* {JSON.stringify(wedding)} */}
+      <Modal
+        open={true}
+        title="현재 참석자"
+        body={
+          <div>
+            <input />
+          </div>
+        }
+        onLeftButtonClick={() => {
+          console.log('왼쪽 클릭');
+        }}
+        onRightButtonClick={() => {
+          console.log('오른쪽 클릭');
+        }}
+      />
     </div>
   );
 }

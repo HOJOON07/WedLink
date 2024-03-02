@@ -16,6 +16,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
   const open = selectedIndex > -1;
 
   const handleSelectedImage = (index: number) => {
+    console.log(open);
     setSelectedIndex(index);
   };
 
