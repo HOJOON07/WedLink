@@ -1,7 +1,7 @@
 {
   "wedding": {
     "id": 0,
-    "date": "2023-08-27T13:00:00",
+    "date": "2053-10-16T13:00:00",
     "location": {
       "lat": 37.28163212324522,
       "lng": 127.0303329958705,
@@ -24,27 +24,27 @@
       }
     },
     "groom": {
-      "name": "류우선",
+      "name": "김호준",
       "account": {
-        "bankName": "신한",
-        "accountNumber": "110-356-123433",
+        "bankName": "우리",
+        "accountNumber": "1002-758-093290",
         "kakaopayLink": "https://qr.kakaopay.com/Ej8rsLNfY"
       },
-      "phoneNumber": "01045532323",
+      "phoneNumber": "01041405909",
       "parents": [
         {
-          "name": "류영만",
+          "name": "김호준",
           "account": {
-            "bankName": "농협",
-            "accountNumber": "233331-51-061400"
+            "bankName": "국민",
+            "accountNumber": "94140590963"
           },
           "phoneNumber": "01053242422"
         },
         {
-          "name": "봉미선",
+          "name": "김유미",
           "account": {
-            "bankName": "농협",
-            "accountNumber": "352-1252-4559-90"
+            "bankName": "국민",
+            "accountNumber": "94140590963"
           },
           "phoneNumber": "01054912252"
         }
