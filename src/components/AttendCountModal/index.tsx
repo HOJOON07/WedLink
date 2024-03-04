@@ -49,7 +49,6 @@ export default function AttendCountModal({ wedding }: AttendCountModalProps) {
         close();
       },
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [close, haveSeenModal, open, wedding]);
   return <div>AttendCountModal</div>;
 }

@@ -6,6 +6,7 @@ import 'swiper/css';
 import './swiper.css';
 import Dimmed from '../shared/Dimmed';
 import generateImageUrl from '@/utils/generateImageUrl';
+import { memo } from 'react';
 
 const cx = classNames.bind(styles);
 
@@ -16,7 +17,7 @@ interface ImageViewerProps {
   onClose: () => void;
 }
 
-export default function ImageViewer({
+function ImageViewer({
   images,
   open,
   selectedIndex,
@@ -84,3 +85,5 @@ function CloseButton({
     </svg>
   );
 }
+
+export default ImageViewer;
