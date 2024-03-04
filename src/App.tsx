@@ -12,8 +12,7 @@ import Invitation from './components/sections/Invitation';
 import Map from './components/sections/Map';
 
 import Video from './components/sections/Video';
-import FullScreenMessage from './components/shared/FullScreenMessage';
-import Modal from './components/shared/Modal';
+
 import Share from './components/shared/Share';
 import useWedding from './hooks/useWedding';
 
@@ -21,15 +20,10 @@ const cx = classNames.bind(styles);
 
 function App() {
   //1
-  const { wedding, loading, error } = useWedding();
+  const { wedding } = useWedding();
 
   //2
-  if (loading) {
-    return <FullScreenMessage type="loading" />;
-  }
-  if (error) {
-    return <FullScreenMessage type="error" />;
-  }
+
   if (wedding == null) {
     return null;
   }
